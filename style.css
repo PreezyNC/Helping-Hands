@@ -1,0 +1,74 @@
+/* Reset */
+html, body, nav, main, img, aside, header, footer, div, h1, h2, a, p, table, tr, th, td, hr{ padding: 0; margin: 0; box-sizing: border-box; }
+
+/*******************/
+
+
+html{ background: #333333 url(background.png) repeat; font-family: basefont, verdana, sans-serif; }
+
+body{ 
+	font-size: 1.3em; 
+	box-shadow: 0 10px 20px black, 0 10px 20px rgba(0,0,0,0.5);
+}
+
+nav{ 
+	background-color: #E0FFFF; 
+	border-bottom: 1px solid #111144;
+	color: white;
+	margin: -7px 0 0 0;
+	text-align: center;
+}
+	nav a{
+		display: block;
+		border-bottom: 1px solid #333333;
+		text-align: center;
+		color: #111144;
+		font-size: 1.5em;
+		font-family: neon, verdana, sans-serif;
+	}
+	nav a:hover{
+		background-color: #2F8484;
+		color: white;
+		cursor: pointer;
+	}
+
+
+main{ 
+	background-color: #FFFFFF; 
+	padding: 20px;
+}
+
+h1,h2{ font-family: stencil, verdana, sans-serif; margin: 15px 0 5px; }
+p{ margin: 0 0 25px; }
+a{ text-decoration: none; }
+hr{ margin: 20px 0 30px; }	
+img{ width: 100%; margin-bottom: 3px; }
+label{ display: block; margin-top: 20px; }
+input{ font-size: 1.2em; }
+textarea{ width: 90%; height: 10em; font-size: 1.25em; }
+
+#submit{ display: block; margin-top: 20px; }
+
+.active{ background-color: #2F8484; color: white; }
+
+.stripes{ padding: 0; }
+	.stripes li{ display: block; border: 1px solid #222; padding: 10px; }
+	.stripes li:nth-child(odd) { background-color: #ddd; }
+	.stripes li:hover{ background-color: #BFB; }
+	.stripes a{ color: black; width: 100%; display: block;}
+
+@media only all and (min-width: 1024px){
+	body{
+		margin: 0 auto;
+		max-width: 1024px;
+	}
+	
+	nav a{
+		display: inline-block;
+		border: none;
+		font-size: 1em;
+		padding: 10px 0;
+		width: 15%;
+	}
+	
+
